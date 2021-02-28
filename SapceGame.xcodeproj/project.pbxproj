@@ -16,6 +16,11 @@
 		C4862B3625EBFD91004A7824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4862B3525EBFD91004A7824 /* Assets.xcassets */; };
 		C4862B4125EBFD91004A7824 /* SapceGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4862B4025EBFD91004A7824 /* SapceGameTests.swift */; };
 		C4862B4C25EBFD91004A7824 /* SapceGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4862B4B25EBFD91004A7824 /* SapceGameUITests.swift */; };
+		C4862B5E25EBFEF9004A7824 /* torpedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4862B5C25EBFEF9004A7824 /* torpedo.mp3 */; };
+		C4862B5F25EBFEF9004A7824 /* explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4862B5D25EBFEF9004A7824 /* explosion.mp3 */; };
+		C4862B6D25EC000D004A7824 /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = C4862B6B25EC000C004A7824 /* Starfield.sks */; };
+		C4862B6E25EC000D004A7824 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = C4862B6C25EC000C004A7824 /* Explosion.sks */; };
+		C4862B7325EC003F004A7824 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = C4862B7225EC003F004A7824 /* spark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		C4862B4725EBFD91004A7824 /* SapceGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SapceGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4862B4B25EBFD91004A7824 /* SapceGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SapceGameUITests.swift; sourceTree = "<group>"; };
 		C4862B4D25EBFD91004A7824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4862B5C25EBFEF9004A7824 /* torpedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedo.mp3; sourceTree = "<group>"; };
+		C4862B5D25EBFEF9004A7824 /* explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explosion.mp3; sourceTree = "<group>"; };
+		C4862B6B25EC000C004A7824 /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
+		C4862B6C25EC000C004A7824 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		C4862B7225EC003F004A7824 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +114,15 @@
 				C4862B2825EBFD8E004A7824 /* AppDelegate.swift */,
 				C4862B2A25EBFD8E004A7824 /* GameScene.sks */,
 				C4862B2C25EBFD8E004A7824 /* Actions.sks */,
+				C4862B6C25EC000C004A7824 /* Explosion.sks */,
+				C4862B6B25EC000C004A7824 /* Starfield.sks */,
 				C4862B2E25EBFD8E004A7824 /* GameScene.swift */,
+				C4862B7225EC003F004A7824 /* spark.png */,
 				C4862B3025EBFD8E004A7824 /* GameViewController.swift */,
 				C4862B3225EBFD8E004A7824 /* Main.storyboard */,
 				C4862B3525EBFD91004A7824 /* Assets.xcassets */,
+				C4862B5D25EBFEF9004A7824 /* explosion.mp3 */,
+				C4862B5C25EBFEF9004A7824 /* torpedo.mp3 */,
 				C4862B3725EBFD91004A7824 /* Info.plist */,
 			);
 			path = SapceGame;
@@ -234,8 +249,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4862B6D25EC000D004A7824 /* Starfield.sks in Resources */,
+				C4862B7325EC003F004A7824 /* spark.png in Resources */,
+				C4862B5F25EBFEF9004A7824 /* explosion.mp3 in Resources */,
+				C4862B5E25EBFEF9004A7824 /* torpedo.mp3 in Resources */,
 				C4862B3425EBFD8E004A7824 /* Main.storyboard in Resources */,
 				C4862B2B25EBFD8E004A7824 /* GameScene.sks in Resources */,
+				C4862B6E25EC000D004A7824 /* Explosion.sks in Resources */,
 				C4862B3625EBFD91004A7824 /* Assets.xcassets in Resources */,
 				C4862B2D25EBFD8E004A7824 /* Actions.sks in Resources */,
 			);
@@ -433,6 +453,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7DSPSWXXC;
 				INFOPLIST_FILE = SapceGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,6 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7DSPSWXXC;
 				INFOPLIST_FILE = SapceGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
